@@ -37,7 +37,8 @@ a{color:inherit}
 
 /* ---- nav */
 nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--rule)}
-nav .name{font:500 19px var(--serif);color:var(--ink);text-decoration:none}
+nav .name{display:flex;align-items:center;gap:11px;font:500 19px var(--serif);color:var(--ink);text-decoration:none}
+.avatar{width:34px;height:34px;border-radius:50%;display:block}
 nav ul{display:flex;gap:28px;align-items:center;list-style:none;margin:0;padding:0}
 nav ul a{color:var(--ink);text-decoration:none;font-size:15px}
 nav ul a:hover{color:var(--accent)}
