@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>高铭贤 Mingxian Gao — 量化研究</title>
-<meta name="description" content="Mingxian Gao，哥伦比亚大学金融工程硕士在读。研究方向：股票 alpha、市场微观结构与波动率建模。">
-<meta property="og:title" content="Mingxian Gao — 量化研究">
-<meta property="og:description" content="系统化交易信号研究：从 A 股逐笔订单流到期权隐含波动率曲面。">
+<meta name="description" content="高铭贤（Mingxian Gao），哥伦比亚大学金融工程硕士在读，做量化研究：股票 alpha、市场微观结构、波动率建模。">
+<meta property="og:title" content="高铭贤 Mingxian Gao — 量化研究">
+<meta property="og:description" content="量化研究项目：A 股逐笔订单流因子、SPX 期权波动率曲面、美股选股信号。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mxgao-a.github.io/personal-website/zh/">
 <meta property="og:locale" content="zh_CN">
@@ -34,7 +34,7 @@
       <li class="hide-s"><a href="#education">教育</a></li>
       <li><a href="#contact">联系</a></li>
       <li><a class="lang" href="../" hreflang="en" lang="en" title="English version">EN</a></li>
-      <li><button class="theme" id="theme" type="button" aria-label="切换浅色/深色主题">主题</button></li>
+      <li><button class="theme" id="theme" type="button" aria-label="切换深色/浅色模式">主题</button></li>
     </ul>
   </nav>
 
@@ -43,8 +43,8 @@
     <div>
       <div class="mono">量化研究 · 纽约</div>
       <h1>高铭贤 <span class="en-name">Mingxian Gao</span></h1>
-      <p class="lede">我专注于构建和检验系统化交易信号，从 A 股逐笔订单流到期权隐含波动率曲面。我最看重的是：一个结果能否<em>在样本外、扣除交易成本后依然成立</em>。</p>
-      <p class="status">哥伦比亚大学金融工程硕士在读 · 寻求 2027 年暑期量化研究实习</p>
+      <p class="lede">做量化研究，从 A 股逐笔订单流因子做到期权隐含波动率曲面。一个结果算不算数，我主要看它<em>样本外、扣费后还站不站得住</em>。</p>
+      <p class="status">哥伦比亚大学金融工程硕士在读 · 在找 2027 年暑期量化研究实习</p>
       <div class="btns">
         <a class="btn primary" href="../files/Mingxian_Gao_Resume.pdf" hreflang="en">下载简历（英文）</a>
         <a class="btn" href="https://github.com/MXGao-A">GitHub</a>
@@ -54,8 +54,8 @@
     </div>
     <figure class="fig">
       <svg class="smiles" viewBox="0 0 560 380" role="img" aria-labelledby="smiles-title smiles-desc">
-      <title id="smiles-title">SPX 隐含波动率微笑，2026 年 11 月 4 日</title>
-      <desc id="smiles-desc">13 条拟合的隐含波动率曲线，剩余期限 16 至 380 天。行权价低于远期价格时波动率陡峭上升，最短期限尤为明显。</desc>
+      <title id="smiles-title">SPX 隐含波动率微笑（2026 年 11 月 4 日）</title>
+      <desc id="smiles-desc">13 个到期日的隐含波动率拟合曲线，期限 16 天到 380 天。行权价低于远期时波动率明显抬升，期限越短越陡。</desc>
       <line class="grid" x1="46" x2="546" y1="340.0" y2="340.0"/>
       <text class="tick" x="38" y="344.0" text-anchor="end">10%</text>
       <line class="grid" x1="46" x2="546" y1="238.8" y2="238.8"/>
@@ -87,15 +87,15 @@
       <text class="lab" x="77.0" y="258.2">380 天</text>
       <text class="axis" x="296.0" y="376" text-anchor="middle">对数 moneyness ln(K/F)</text>
       </svg>
-      <figcaption><b>图 1</b> — 2026 年 11 月 4 日的 SPX 隐含波动率微笑，基于 1,616 个期权报价，用我编写的<a href="https://github.com/MXGao-A/spx-vol-surface">无套利 SVI 代码</a>拟合。</figcaption>
+      <figcaption><b>图 1</b> — 2026 年 11 月 4 日 SPX 隐含波动率微笑。共 1,616 个期权报价，用我写的<a href="https://github.com/MXGao-A/spx-vol-surface">无套利 SVI 代码</a>拟合。</figcaption>
     </figure>
   </div>
 
-  <div class="stats" aria-label="主要成果">
-    <div class="stat"><div class="n">4,000+</div><div class="l">只 A 股，基于逐笔委托与成交数据建模</div></div>
+  <div class="stats" aria-label="几个关键数字">
+    <div class="stat"><div class="n">4,000+</div><div class="l">只 A 股，逐笔委托和成交数据</div></div>
     <div class="stat"><div class="n">2.58</div><div class="l">最优微观结构因子的多空回测 Sharpe</div></div>
-    <div class="stat"><div class="n">0.29</div><div class="l">无套利 SPX 波动率曲面的拟合 RMSE（波动率点）</div></div>
-    <div class="stat"><div class="n">2.5M</div><div class="l">个股票-月观测，构成 point-in-time 美股研究数据库</div></div>
+    <div class="stat"><div class="n">0.29</div><div class="l">SPX 无套利波动率曲面拟合 RMSE（波动率点）</div></div>
+    <div class="stat"><div class="n">2.5M</div><div class="l">个股票-月的 point-in-time 美股数据</div></div>
   </div>
 
   <section id="experience">
@@ -107,8 +107,8 @@
         <h3>上海红墙泰和基金</h3>
         <div class="role">量化研究实习生</div>
         <ul>
-          <li>基于 4,000+ 只 A 股的逐笔委托与成交数据，构建两类日频因子：一是订单流持续性，用委托方向的多阶自相关刻画；二是状态条件成交特征，识别急跌、低价和放量时出现的异常大单。</li>
-          <li>将因子聚合到个股-日频度，检验周度截面 Rank IC 并做多空回测。最优因子<b>周均 Rank IC 达 5.23%</b>，多空年化收益 21.6%，<b>Sharpe 2.58</b>。</li>
+          <li>用 4,000+ 只 A 股的逐笔委托和成交数据做了两类日频因子：一类是订单流持续性，用委托方向的多阶自相关来刻画；另一类看特定行情下的成交，专门抓急跌、低价、放量时的异常大单。</li>
+          <li>因子汇总到个股日频，按周看截面 Rank IC，再做多空回测。最优因子<b>周度 Rank IC 均值 5.23%</b>，多空年化 21.6%，<b>Sharpe 2.58</b>。</li>
         </ul>
       </div>
     </div>
@@ -119,9 +119,9 @@
         <h3>上海悦禄资产管理</h3>
         <div class="role">量化研究实习生</div>
         <ul>
-          <li>按委托编号合并逐笔成交、还原原始委托，再基于委托规模、执行时长和主动买卖方向构建机构资金流因子。最优因子<b>周均 Rank IC 4.7%</b>，已纳入公司实盘因子库。</li>
-          <li>训练带时间注意力机制的 1D-CNN，以多日因子序列预测个股未来 5 日收益。</li>
-          <li>将预测转化为等权 top 5% 组合，分五个错开的五日批次滚动持仓：2024–2025 年样本外回测 <b>Sharpe 2.5</b>，Calmar 5.2。</li>
+          <li>按委托编号把逐笔成交还原成原始委托单，再按委托金额、成交时长和主动买卖方向拆分，做成机构资金流因子。最优因子<b>周度 Rank IC 均值 4.7%</b>，已进入公司实盘因子库。</li>
+          <li>用带时间注意力的 1D-CNN，输入多日因子序列，预测个股未来 5 日收益。</li>
+          <li>每天等权买入预测排名前 5% 的股票，持有 5 天，分五批错峰滚动：2024–2025 年样本外回测 <b>Sharpe 2.5</b>，Calmar 5.2。</li>
         </ul>
       </div>
     </div>
@@ -133,10 +133,10 @@
     <div class="entry">
       <div class="mono">2026.11<br>Python · LLM 智能体</div>
       <div>
-        <h3>用于 alpha 因子挖掘的 LLM 研究智能体</h3>
-        <div class="role">从零重建 RD-Agent 式研究循环，基于 point-in-time 沪深 300 数据，测试期全程锁定</div>
+        <h3>用 LLM 智能体挖掘 alpha 因子</h3>
+        <div class="role">从零复现 RD-Agent 式的研究闭环，沪深 300 point-in-time 数据，测试期全程封存</div>
         <figure class="project-fig chart-fig">
-<svg class="chart" viewBox="0 0 760 204" role="img" aria-label="FAgent 测试期结果"><title>FAgent 测试期结果</title><desc>四个因子库在测试期的 IC 与扣费后年化超额收益（5 个模型随机种子的均值）：Alpha20（初始）：IC 0.031，收益 3.3%；随机搜索：IC 0.030，收益 3.6%；FAgent（LLM）：IC 0.034，收益 4.8%；Alpha158（Qlib）：IC 0.048，收益 10.8%</desc>
+<svg class="chart" viewBox="0 0 760 204" role="img" aria-label="FAgent 测试期结果"><title>FAgent 测试期结果</title><desc>四个因子库在测试期的 IC 和扣费后年化超额（5 个随机种子平均）：Alpha20（初始）：IC 0.031，收益 3.3%；随机搜索：IC 0.030，收益 3.6%；FAgent（LLM）：IC 0.034，收益 4.8%；Alpha158（Qlib）：IC 0.048，收益 10.8%</desc>
 <text class="tick head" x="150.0" y="24">测试期 IC</text>
 <text class="lab " x="138" y="56" text-anchor="end">Alpha20（初始）</text>
 <rect class="bar c-muted" x="150.0" y="44" width="116.1" height="18" rx="1"/>
@@ -155,7 +155,7 @@
 <line class="err" x1="325.6" x2="337.8" y1="173" y2="173"/>
 <text class="val" x="343.8" y="177">0.048</text>
 <line class="axisline" x1="150.0" x2="150.0" y1="40" y2="200"/>
-<text class="tick head" x="475.0" y="24">测试期年化超额收益（扣费后）</text>
+<text class="tick head" x="475.0" y="24">测试期扣费后年化超额</text>
 <rect class="bar c-muted" x="475.0" y="44" width="52.6" height="18" rx="1"/>
 <line class="err" x1="508.9" x2="546.4" y1="53" y2="53"/>
 <text class="val" x="552.4" y="57">3.3%</text>
@@ -170,15 +170,15 @@
 <text class="val" x="691.4" y="177">10.8%</text>
 <line class="axisline" x1="475.0" x2="475.0" y1="40" y2="200"/>
 </svg>
-        <figcaption>测试期为 2017 年 1 月至 2020 年 7 月，搜索过程中从未使用。柱：5 个模型随机种子的均值；误差线：±1 标准差。</figcaption>
+        <figcaption>测试期为 2017 年 1 月至 2020 年 7 月，搜索全程没碰过这段数据。柱高为 5 个随机种子的均值，误差线为 ±1 标准差。</figcaption>
         </figure>
         <ul>
-          <li>每一轮由 LLM 提出假设和公式化因子；代码用白名单表达式语言解析因子（语法上无法引入未来信息），训练 LightGBM，在 A 股交易摩擦下回测 top-50 组合，再把验证集结果反馈给智能体。智能体在各轮之间维护自己的研究笔记。</li>
-          <li>独立重建 Qlib 的 Alpha158 流程，并与 Qlib 本身逐值核对：157 个特征中有 127 个完全一致，回测日收益相关系数 <b>0.9998</b>。与 RD-Agent 默认流程不同，智能体始终接触不到 2017–2020 年的测试期。</li>
-          <li>与同等规模的随机搜索相比，智能体因子从训练期到测试期 IC 符号保持不变的比例为 <b>85% 对 68%</b>，测试期 IC 从 0.031 提升至 0.034。但该因子库仍不及 157 个人工设计的 Alpha158 特征，验证集上的多数提升也未能延续到测试期。</li>
+          <li>每一轮由 LLM 提出假设、写出公式因子。因子用白名单表达式语言解析，语法上就写不出未来函数；然后训练 LightGBM，按 A 股的交易限制和成本回测 top-50 组合，把验证集结果反馈回去。智能体会自己记研究笔记，跨轮次保留。</li>
+          <li>独立复现 Qlib 的 Alpha158 流程，和 Qlib 逐值对账：157 个特征里 127 个完全一致，回测日收益相关系数 <b>0.9998</b>。和 RD-Agent 默认流程不同，智能体从头到尾看不到 2017–2020 年的测试期。</li>
+          <li>和同等规模的随机搜索比，智能体挖出的因子从训练期到测试期 IC 方向不变的比例是 <b>85% 对 68%</b>，测试期 IC 从 0.031 提到 0.034。但整体还是不如 157 个人工设计的 Alpha158 特征，验证集上的提升到测试期大多消失。</li>
         </ul>
         <ul class="chips"><li>LLM 智能体</li><li>LightGBM</li><li>pandas</li><li>pytest + CI</li></ul>
-        <a class="link" href="https://github.com/MXGao-A/FAgent">代码、提示词及全部模型回复（GitHub）→</a>
+        <a class="link" href="https://github.com/MXGao-A/FAgent">代码、提示词和全部模型输出（GitHub）→</a>
       </div>
     </div>
 
@@ -186,25 +186,25 @@
       <div class="mono">2026.10 – 2026.11<br>Python</div>
       <div>
         <h3>SPX 波动率曲面与随机波动率模型校准</h3>
-        <div class="role">无套利 SVI、基于 Carr–Madan FFT 的 Heston、SABR，逐日重新校准</div>
-        <figure class="project-fig"><img src="../assets/spx-surface.jpg" width="1600" height="640" loading="lazy" alt="拟合的 SPX 隐含波动率三维曲面，旁为 13 个到期日各自的波动率微笑"></figure>
+        <div class="role">无套利 SVI、Heston（Carr–Madan FFT 定价）、SABR，逐日重新校准</div>
+        <figure class="project-fig"><img src="../assets/spx-surface.jpg" width="1600" height="640" loading="lazy" alt="拟合出的 SPX 隐含波动率三维曲面，旁边是 13 个到期日各自的波动率微笑"></figure>
         <ul>
-          <li>基于 SPX 期权日终数据（每日约 30,000 个合约，共 103 个交易日）搭建数据流程：由看跌-看涨平价关系提取远期价格与贴现因子，每日反解约 1,600 个隐含波动率。</li>
-          <li>在 13 个到期日上拟合无套利 SVI 曲面：样本内 <b>RMSE 0.29 个波动率点</b>，留出行权价上为 0.30，而三次样条为 0.58。</li>
-          <li>用 FFT 定价器校准 Heston 模型，与数值积分结果仅相差 0.004 个波动率点，速度快约 5,000 倍。在 103 次逐日重新校准中，相关系数参数稳定在 −0.67 ± 0.04。</li>
+          <li>数据用 SPX 期权日终报价，每天约 30,000 个合约，共 103 个交易日。用看涨看跌平价回归出隐含远期和贴现因子，每天反解约 1,600 个隐含波动率。</li>
+          <li>在 13 个到期日上拟合无套利 SVI 曲面：样本内 <b>RMSE 0.29 个波动率点</b>，留出行权价上 0.30，三次样条是 0.58。</li>
+          <li>自己写 FFT 定价器校准 Heston，和数值积分只差 0.004 个波动率点，快约 5,000 倍。103 个交易日逐日重新校准，ρ 稳定在 −0.67 ± 0.04。</li>
         </ul>
         <ul class="chips"><li>NumPy</li><li>SciPy</li><li>pandas</li><li>pytest + CI</li></ul>
-        <a class="link" href="https://github.com/MXGao-A/spx-vol-surface">代码与完整报告（GitHub）→</a>
+        <a class="link" href="https://github.com/MXGao-A/spx-vol-surface">代码和完整报告（GitHub）→</a>
       </div>
     </div>
 
     <div class="entry">
       <div class="mono">2026.08 – 至今<br>Python · SQL</div>
       <div>
-        <h3>美股截面选股信号</h3>
-        <div class="role">point-in-time 数据、事先设定的信号、考虑交易成本的组合检验</div>
+        <h3>美股横截面选股信号研究</h3>
+        <div class="role">point-in-time 数据，信号事先定死，组合检验计入交易成本</div>
         <figure class="project-fig chart-fig">
-<svg class="chart" viewBox="0 0 760 164" role="img" aria-label="不同市值股票池的信号强度与净超额收益"><title>不同市值股票池的信号强度与净超额收益</title><desc>样本外合成 Rank IC，以及 100 只股票纯多头组合相对其等权股票池的年化净超额收益：大盘股：IC 0.028，10 bp 成本下 +2.5%；小盘股：IC 0.067，30–100 bp 成本下 +8.2%；微盘股：IC 0.097，300 bp 成本下 −6.0%</desc>
+<svg class="chart" viewBox="0 0 760 164" role="img" aria-label="不同市值股票池的信号强度与扣费后超额"><title>不同市值股票池的信号强度与扣费后超额</title><desc>样本外合成 Rank IC，以及 100 只股票纯多头组合相对自身等权股票池的扣费后年化超额：大盘股 IC 0.028，成本 10 bp 时 +2.5%；小盘股 IC 0.067，成本 30–100 bp 时 +8.2%；微盘股 IC 0.097，成本 300 bp 时 −6.0%</desc>
 <text class="tick head" x="150.0" y="24">样本外 Rank IC</text>
 <text class="lab " x="138" y="56" text-anchor="end">大盘股</text>
 <rect class="bar c-muted" x="150.0" y="44" width="42.0" height="18" rx="1"/>
@@ -216,7 +216,7 @@
 <rect class="bar c-short" x="150.0" y="124" width="145.5" height="18" rx="1"/>
 <text class="val" x="303.5" y="137">0.097</text>
 <line class="axisline" x1="150.0" x2="150.0" y1="40" y2="160"/>
-<text class="tick head" x="420.0" y="24">相对自身股票池的年化净超额收益</text>
+<text class="tick head" x="420.0" y="24">扣费后年化超额（相对自身股票池）</text>
 <rect class="bar c-muted" x="500.0" y="44" width="27.5" height="18" rx="1"/>
 <text class="val" x="535.5" y="57">+2.5%</text>
 <text class="tick" x="581.5" y="57">成本 10 bp</text>
@@ -228,24 +228,24 @@
 <text class="tick" x="508.0" y="137">成本 300 bp</text>
 <line class="axisline" x1="500.0" x2="500.0" y1="40" y2="160"/>
 </svg>
-        <figcaption>Rank IC：18 个信号的合成，2000–2021 年。收益：100 只股票纯多头组合相对其等权股票池，1990–2025 年，已扣除单边成本。</figcaption>
+        <figcaption>Rank IC 为 18 个信号的合成，2000–2021 年。收益为 100 只股票纯多头组合相对等权股票池的超额，1990–2025 年，已扣单边成本。</figcaption>
         </figure>
         <ul>
-          <li>基于 CRSP、Compustat 和 I/B/E/S 构建 point-in-time 美股数据库（<b>2.5M 个股票-月</b>，1985–2025 年），将基本面数据对齐到公告日，并修正拆股、财年和退市收益等数据错误。复现已发表的市场、规模、价值和动量因子，相关系数 0.98–1.00。</li>
-          <li>在四个市值分层的股票池中检验 18 个事先设定的信号。合成 Rank IC 从市值最大的 1,000 只股票中的 0.03，升至市值排名 2,001–3,000 区间的 0.07，并在锁定的 2022–2025 年样本中依然成立。</li>
-          <li>经流动性筛选的小盘股纯多头组合<b>扣费后每年跑赢其股票池 8.2%</b>（信息比率 1.1），大盘股仅为 2.5%。微盘股的优势在现实交易成本下转为负值，这正是可交易 alpha 与统计意义上的 alpha 之间的差别。</li>
+          <li>用 CRSP、Compustat、I/B/E/S 搭了 point-in-time 美股数据库（<b>2.5M 个股票-月</b>，1985–2025 年）：财务数据按公告日对齐，修正拆股、财年切换和退市收益的错误。复现市场、规模、价值、动量四个公开因子，相关系数 0.98–1.00。</li>
+          <li>按市值分四个股票池，检验 18 个事先设定的信号。合成 Rank IC 在市值前 1,000 名里是 0.03，到第 2,001–3,000 名升到 0.07，在锁定的 2022–2025 年样本里依然成立。</li>
+          <li>经流动性筛选的小盘股纯多头组合<b>扣费后每年跑赢股票池 8.2%</b>（信息比率 1.1），大盘股只有 2.5%。微盘股按实际交易成本一算，超额直接转负：统计上显著的 alpha，不等于能交易的 alpha。</li>
         </ul>
         <ul class="chips"><li>pandas</li><li>NumPy</li><li>SciPy</li><li>WRDS</li></ul>
-        <a class="link" href="https://github.com/MXGao-A/us-equity-signal-research">代码、结果与完整报告（GitHub）→</a>
+        <a class="link" href="https://github.com/MXGao-A/us-equity-signal-research">代码、结果和完整报告（GitHub）→</a>
       </div>
     </div>
 
     <div class="more">
-      <div class="more-head"><h3 class="sub">GitHub 上的更多项目</h3><span class="mono">真实数据 · 锁定测试期 · 计入成本</span></div>
+      <div class="more-head"><h3 class="sub">GitHub 上的其他项目</h3><span class="mono">真实数据 · 测试期封存 · 扣除成本</span></div>
       <div class="cards">
       <article class="card">
         <figure class="card-fig">
-<svg class="chart" viewBox="0 0 380 200" role="img" aria-label="算术平均亚式看涨期权的方差缩减"><title>算术平均亚式看涨期权的方差缩减</title><desc>100 万条路径下的方差缩减倍数：普通蒙特卡洛 1，对偶变量 2.0，欧式期权控制变量 3.4，几何亚式控制变量 1335（对数刻度）。</desc>
+<svg class="chart" viewBox="0 0 380 200" role="img" aria-label="算术平均亚式看涨期权的方差缩减"><title>算术平均亚式看涨期权的方差缩减</title><desc>100 万条路径下的方差缩减倍数：普通蒙特卡洛 1，对偶变量 2.0，欧式期权作控制变量 3.4，几何亚式作控制变量 1335（对数坐标）。</desc>
 <text class="lab " x="88" y="35.5" text-anchor="end">普通</text>
 <rect class="bar c-muted" x="96" y="19.5" width="1.5" height="24.1" rx="1"/>
 <text class="val" x="101.0" y="35.5">1.0×</text>
@@ -260,15 +260,15 @@
 <text class="val" x="314.9" y="164.5">1,335×</text>
 </svg>
         </figure>
-        <h3><a href="https://github.com/MXGao-A/mc-pricing-engine">C++ Monte Carlo 定价引擎</a></h3>
-        <p>纯头文件的 C++17 引擎：采用 Andersen QE 离散格式的 Heston 模型、障碍期权与自动赎回（autocallable）结构、Longstaff–Schwartz、pathwise 与似然比法 Greeks、OpenMP 并行及 pybind11 接口。每个定价器都与解析解或树方法结果对照验证。</p>
-        <dl class="facts"><div><dt>最大误差</dt><dd>≤ 0.1%</dd></div><div><dt>方差缩减</dt><dd>1,335×</dd></div><div><dt>对比 NumPy</dt><dd>8.4×</dd></div></dl>
+        <h3><a href="https://github.com/MXGao-A/mc-pricing-engine">C++ 蒙特卡洛定价引擎</a></h3>
+        <p>纯头文件 C++17 实现：Heston（Andersen QE 离散）、障碍期权、自动赎回（autocallable）结构、Longstaff–Schwartz，Greeks 用 pathwise 和似然比法，OpenMP 并行，pybind11 接口。每个定价器都和解析解或树方法对过数。</p>
+        <dl class="facts"><div><dt>最大误差</dt><dd>≤ 0.1%</dd></div><div><dt>方差缩减</dt><dd>1,335×</dd></div><div><dt>较 NumPy 提速</dt><dd>8.4×</dd></div></dl>
         <ul class="chips"><li>C++17</li><li>OpenMP</li><li>pybind11</li></ul>
         <a class="link" href="https://github.com/MXGao-A/mc-pricing-engine">mc-pricing-engine →</a>
       </article>
       <article class="card">
         <figure class="card-fig">
-<svg class="chart" viewBox="0 0 380 200" role="img" aria-label="风险模型偏差统计量（测试期）"><title>风险模型偏差统计量（测试期）</title><desc>100 个随机组合在 2017–2020 年的偏差统计量（等于 1 表示风险预测准确）：因子模型 1.006，市场模型 1.036，样本协方差 1.095，Ledoit-Wolf 1.140。</desc>
+<svg class="chart" viewBox="0 0 380 200" role="img" aria-label="风险模型偏差统计量（测试期）"><title>风险模型偏差统计量（测试期）</title><desc>100 个随机组合在 2017–2020 年的偏差统计量（越接近 1，风险预测越准）：因子模型 1.006，市场模型 1.036，样本协方差 1.095，Ledoit-Wolf 1.140。</desc>
 <rect class="band" x="144.5" y="10" width="86.0" height="172"/>
 <text class="lab bold" x="88" y="35.5" text-anchor="end">因子模型</text>
 <rect class="bar c-acc" x="96" y="19.5" width="96.9" height="24.1" rx="1"/>
@@ -286,14 +286,14 @@
 </svg>
         </figure>
         <h3><a href="https://github.com/MXGao-A/ashare-risk-model">沪深 300 因子风险模型</a></h3>
-        <p>Barra 式风格因子、截面 WLS 因子收益、带 Newey–West 调整的 EWMA 协方差、特征因子与波动率状态调整，以及纯多头组合优化器。仅在 2017–2020 年上做一次性评估。</p>
+        <p>Barra 式风格因子，截面 WLS 估计因子收益，EWMA 协方差加 Newey–West 调整，再做特征因子和波动率状态调整，外加纯多头组合优化器。2017–2020 年测试期只评估一次。</p>
         <dl class="facts"><div><dt>偏差统计量</dt><dd>1.006</dd></div><div><dt>最小方差波动率</dt><dd>13.6%</dd></div><div><dt>沪深 300 波动率</dt><dd>19.2%</dd></div></dl>
         <ul class="chips"><li>NumPy</li><li>cvxpy</li><li>风险模型</li></ul>
         <a class="link" href="https://github.com/MXGao-A/ashare-risk-model">ashare-risk-model →</a>
       </article>
       <article class="card">
         <figure class="card-fig">
-<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="沪深 300 未来一个月波动率：预测与实际"><title>沪深 300 未来一个月波动率：预测与实际</title><desc>沪深 300 未来一个月的年化波动率，2017 年至 2020 年 9 月：基于价格区间的已实现波动率与 GARCH、log-HAR 预测对比。</desc>
+<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="沪深 300 未来一个月波动率：预测 vs 实际"><title>沪深 300 未来一个月波动率：预测 vs 实际</title><desc>沪深 300 未来一个月年化波动率，2017 年至 2020 年 9 月：OHLC 极差估计的已实现波动率，对比 GARCH 和 log-HAR 的预测。</desc>
 <line class="grid" x1="30" x2="318" y1="188.0" y2="188.0"/><text class="tick" x="24" y="191.5" text-anchor="end">0%</text>
 <line class="grid" x1="30" x2="318" y1="129.3" y2="129.3"/><text class="tick" x="24" y="132.8" text-anchor="end">20%</text>
 <line class="grid" x1="30" x2="318" y1="70.7" y2="70.7"/><text class="tick" x="24" y="74.2" text-anchor="end">40%</text>
@@ -311,14 +311,14 @@
 </svg>
         </figure>
         <h3><a href="https://github.com/MXGao-A/vol-forecasting">波动率预测：GARCH vs HAR</a></h3>
-        <p>由日度 OHLC 构造基于价格区间的已实现方差代理；在沪深 300 指数及 231 只成分股上，比较九个模型在 1、5、22 日期限的预测，采用 QLIKE、Diebold–Mariano、Mincer–Zarnowitz 与模型置信集（MCS）检验。</p>
-        <dl class="facts"><div><dt>损失 vs GARCH</dt><dd>−9%</dd></div><div><dt>个股胜出</dt><dd>92%</dd></div><div><dt>DM t 值</dt><dd>−7.1</dd></div></dl>
+        <p>用日度 OHLC 极差构造已实现方差代理，在沪深 300 指数和 231 只成分股上比较九个模型 1、5、22 日的预测效果，检验用 QLIKE、Diebold–Mariano、Mincer–Zarnowitz 回归和模型置信集（MCS）。</p>
+        <dl class="facts"><div><dt>损失较 GARCH</dt><dd>−9%</dd></div><div><dt>个股占优</dt><dd>92%</dd></div><div><dt>DM t 值</dt><dd>−7.1</dd></div></dl>
         <ul class="chips"><li>arch</li><li>SciPy</li><li>波动率预测</li></ul>
         <a class="link" href="https://github.com/MXGao-A/vol-forecasting">vol-forecasting →</a>
       </article>
       <article class="card">
         <figure class="card-fig">
-<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="QuantStock 测试期净值（初始为 1）"><title>QuantStock 测试期净值（初始为 1）</title><desc>2018 年至 2020 年 9 月的单位净值：六个模型扣费后的 top-30 组合与沪深 300 指数对比。</desc>
+<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="QuantStock 测试期净值（起点为 1）"><title>QuantStock 测试期净值（起点为 1）</title><desc>2018 年至 2020 年 9 月单位净值：六个模型扣费后的 top-30 组合，对比沪深 300 指数。</desc>
 <line class="grid" x1="30" x2="296" y1="188.0" y2="188.0"/><text class="tick" x="24" y="191.5" text-anchor="end">0.6</text>
 <line class="grid" x1="30" x2="296" y1="129.3" y2="129.3"/><text class="tick" x="24" y="132.8" text-anchor="end">1.0</text>
 <line class="grid" x1="30" x2="296" y1="70.7" y2="70.7"/><text class="tick" x="24" y="74.2" text-anchor="end">1.4</text>
@@ -338,15 +338,15 @@
 <text class="end c-muted dash" x="302.0" y="115.2">沪深 300</text>
 </svg>
         </figure>
-        <h3><a href="https://github.com/MXGao-A/QuantStock">沪深 300 深度学习选股排序</a></h3>
-        <p>六个模型（LightGBM、XGBoost、LSTM、ALSTM、GRU、Transformer）每日对沪深 300 成分股打分排序，买入排名前 30 的股票并持有五天。经重建，消除了未来信息和训练/测试数据泄露。</p>
-        <dl class="facts"><div><dt>测试 Rank IC</dt><dd>0.046–0.062</dd></div><div><dt>年化净收益</dt><dd>11.7–15.4%</dd></div><div><dt>沪深 300</dt><dd>4.4%</dd></div></dl>
+        <h3><a href="https://github.com/MXGao-A/QuantStock">沪深 300 深度学习选股</a></h3>
+        <p>LightGBM、XGBoost、LSTM、ALSTM、GRU、Transformer 六个模型，每天给沪深 300 成分股打分，买入前 30 名，持有五天。原项目重写过一遍，去掉了未来函数和训练/测试集泄露。</p>
+        <dl class="facts"><div><dt>测试期 Rank IC</dt><dd>0.046–0.062</dd></div><div><dt>扣费后年化</dt><dd>11.7–15.4%</dd></div><div><dt>沪深 300</dt><dd>4.4%</dd></div></dl>
         <ul class="chips"><li>PyTorch</li><li>LightGBM</li><li>XGBoost</li></ul>
         <a class="link" href="https://github.com/MXGao-A/QuantStock">QuantStock →</a>
       </article>
       <article class="card">
         <figure class="card-fig">
-<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="TradeRules 样本外净值（初始为 1）"><title>TradeRules 样本外净值（初始为 1）</title><desc>2016 年至 2020 年 9 月中证 100 成分股上扣费后的单位净值：买入持有、沪深 300 指数与在线均值回归规则。</desc>
+<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="TradeRules 样本外净值（起点为 1）"><title>TradeRules 样本外净值（起点为 1）</title><desc>2016 年至 2020 年 9 月，中证 100 成分股上扣费后的单位净值：买入持有、沪深 300 指数和在线均值回归策略。</desc>
 <line class="grid" x1="30" x2="268" y1="188.0" y2="188.0"/><text class="tick" x="24" y="191.5" text-anchor="end">0.0</text>
 <line class="grid" x1="30" x2="268" y1="144.0" y2="144.0"/><text class="tick" x="24" y="147.5" text-anchor="end">0.4</text>
 <line class="grid" x1="30" x2="268" y1="100.0" y2="100.0"/><text class="tick" x="24" y="103.5" text-anchor="end">0.8</text>
@@ -366,18 +366,18 @@
 <path class="ln c-short bold" d="M30.0,78.0 L30.6,87.0 L31.4,89.0 L32.2,89.2 L33.0,101.6 L33.9,106.8 L34.4,105.1 L39.8,97.5 L40.6,95.0 L41.2,95.7 L42.0,95.4 L43.0,97.9 L43.8,97.6 L44.6,98.1 L45.4,104.5 L46.0,104.5 L47.0,104.2 L47.8,101.3 L48.6,104.6 L49.4,105.6 L50.3,109.0 L50.8,106.1 L52.2,116.4 L52.8,113.6 L53.6,114.3 L54.4,109.7 L55.2,105.8 L56.1,111.2 L56.6,112.5 L57.4,115.8 L58.3,118.4 L59.1,120.7 L59.9,120.0 L60.5,120.3 L61.3,118.6 L62.1,120.9 L63.0,122.7 L63.8,124.3 L64.3,124.4 L65.7,126.0 L66.3,126.0 L67.1,124.6 L68.9,123.2 L69.7,123.0 L70.5,123.5 L71.1,124.8 L71.9,125.0 L72.7,128.4 L73.6,125.8 L74.4,126.2 L75.0,125.2 L75.8,125.6 L76.6,127.7 L77.4,128.7 L78.3,130.1 L78.8,131.8 L79.6,131.0 L80.6,129.6 L81.4,131.1 L82.3,131.1 L83.1,131.9 L84.6,132.7 L85.4,132.4 L86.3,132.4 L87.1,133.0 L87.9,133.2 L88.5,132.7 L89.3,133.0 L90.1,132.5 L90.9,131.6 L91.8,132.5 L92.3,133.1 L93.7,133.3 L94.3,132.2 L95.1,134.0 L95.9,135.1 L96.9,134.2 L97.7,132.8 L98.5,142.5 L99.1,143.2 L99.9,138.3 L101.0,138.7 L101.8,136.9 L102.7,137.2 L103.5,137.2 L104.3,135.5 L104.9,136.8 L105.7,136.3 L106.5,136.0 L107.4,135.8 L108.2,135.5 L108.7,135.6 L109.6,134.9 L110.4,134.8 L111.2,135.1 L112.0,135.2 L112.6,135.3 L113.4,135.3 L114.3,135.5 L115.1,136.0 L115.9,136.2 L116.5,136.4 L117.3,136.6 L119.1,136.4 L119.9,136.1 L120.7,136.1 L121.3,135.3 L122.1,135.5 L122.9,135.0 L123.8,135.0 L124.6,135.5 L125.1,135.9 L126.0,136.4 L126.8,136.3 L127.6,136.5 L128.5,136.8 L129.0,137.1 L129.8,137.0 L130.8,138.4 L131.6,139.8 L132.5,138.5 L133.3,135.2 L133.8,135.3 L134.7,144.3 L135.5,147.5 L136.3,147.2 L138.1,145.3 L138.7,145.1 L139.5,144.4 L140.3,140.8 L141.1,142.2 L142.0,145.4 L142.5,146.9 L143.9,149.0 L144.4,147.1 L145.3,147.2 L146.1,147.6 L147.2,146.8 L148.0,145.2 L148.9,145.6 L149.7,144.6 L150.2,145.7 L151.1,147.4 L151.9,147.4 L152.7,148.1 L153.7,156.6 L154.5,167.4 L155.1,168.0 L155.9,169.3 L156.7,167.9 L157.5,166.0 L158.4,165.6 L158.9,166.3 L159.8,164.6 L160.6,165.8 L161.4,165.4 L162.2,165.9 L162.8,165.6 L163.6,165.2 L164.4,166.0 L165.3,166.8 L166.1,167.6 L166.7,166.0 L167.6,166.3 L169.4,169.1 L170.2,168.5 L171.1,169.6 L171.9,170.6 L172.4,168.3 L173.3,172.1 L174.1,171.6 L174.9,171.6 L175.8,172.0 L176.3,172.4 L177.1,171.1 L178.0,172.3 L178.8,177.7 L179.6,180.1 L180.2,178.3 L181.5,178.4 L182.1,178.5 L182.9,179.1 L183.7,178.4 L184.6,179.6 L186.4,180.5 L186.9,180.0 L187.7,180.0 L188.6,179.9 L189.4,179.0 L190.2,179.2 L190.8,180.0 L191.6,179.2 L192.4,179.3 L193.3,178.7 L194.2,179.1 L195.1,179.5 L195.6,179.2 L196.4,179.7 L198.0,180.7 L198.5,180.1 L199.3,178.9 L200.2,178.4 L201.0,179.0 L201.8,179.5 L202.8,180.4 L203.3,180.2 L204.2,181.4 L205.0,180.4 L205.8,179.9 L206.6,180.0 L207.2,179.2 L208.0,179.5 L208.8,179.6 L209.7,179.8 L210.5,180.5 L211.1,180.5 L211.9,180.7 L212.7,180.7 L213.5,180.5 L214.4,180.5 L214.9,180.6 L215.7,180.6 L216.7,180.4 L217.5,180.7 L219.3,180.8 L220.2,180.6 L220.7,181.1 L221.5,181.0 L222.4,181.4 L223.2,181.2 L224.0,181.5 L224.6,180.5 L225.4,180.6 L226.2,180.4 L227.0,180.5 L227.9,180.5 L228.4,180.4 L229.3,180.2 L230.1,180.0 L230.9,179.2 L231.9,178.8 L232.7,178.6 L233.3,178.4 L234.1,178.6 L236.0,179.2 L236.8,178.9 L237.7,178.6 L238.5,178.8 L239.0,179.3 L239.9,179.2 L240.7,179.8 L241.5,180.8 L242.4,180.9 L242.9,180.5 L243.7,179.6 L244.7,179.7 L245.5,179.7 L246.4,179.9 L247.2,179.7 L248.4,179.9 L249.2,180.1 L250.1,180.0 L250.6,180.3 L251.5,180.2 L252.3,180.1 L253.1,180.1 L253.9,180.4 L254.5,180.2 L255.9,180.4 L256.4,180.3 L257.2,180.1 L258.1,180.1 L258.9,180.2 L259.7,180.7 L260.3,180.4 L261.1,180.6 L261.9,180.7 L262.8,180.1 L263.6,179.9 L264.1,180.2 L265.0,179.8 L265.8,180.4 L266.6,180.1 L267.4,180.0 L268.0,179.9 L268.0,179.9"/>
 <text class="end c-long bold" x="274.0" y="34.8">买入持有</text>
 <text class="end c-muted dash" x="274.0" y="46.8">沪深 300</text>
-<text class="end c-short bold" x="274.0" y="183.4">均值回归规则</text>
+<text class="end c-short bold" x="274.0" y="183.4">均值回归策略</text>
 </svg>
         </figure>
-        <h3><a href="https://github.com/MXGao-A/TradeRules">在线投资组合选择的严格检验</a></h3>
-        <p>约 20 个已发表的规则（OLMAR、PAMR、Anticor、ONS、CWMR……），计入延迟执行与交易成本。修复 15 个 bug 后发现，均值回归规则其实亏钱：A 股日度涨跌更倾向于延续而非反转。</p>
+        <h3><a href="https://github.com/MXGao-A/TradeRules">在线组合选择策略的 A 股实测</a></h3>
+        <p>复现了论文里约 20 个在线组合选择策略（OLMAR、PAMR、Anticor、ONS、CWMR……），考虑延迟成交和交易成本。修完 15 个 bug 之后发现，均值回归类策略其实亏钱：A 股日度涨跌更多是延续，而不是反转。</p>
         <dl class="facts"><div><dt>股票池</dt><dd>中证 100</dd></div><div><dt>样本外</dt><dd>2016–2020</dd></div><div><dt>修复 bug</dt><dd>15</dd></div></dl>
         <ul class="chips"><li>NumPy</li><li>SciPy</li><li>CVXOPT</li></ul>
         <a class="link" href="https://github.com/MXGao-A/TradeRules">TradeRules →</a>
       </article>
       <article class="card">
         <figure class="card-fig">
-<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="NeurIPS 论文标题主题占比，1987–2024"><title>NeurIPS 论文标题主题占比，1987–2024</title><desc>1987 年至 2024 年 NeurIPS 论文标题中各主题的权重占比（三年平均）：神经网络类标题从约 40% 下降，语言与大模型主题在末期上升。</desc>
+<svg class="chart" viewBox="0 0 380 210" role="img" aria-label="NeurIPS 论文标题主题占比（1987–2024）"><title>NeurIPS 论文标题主题占比（1987–2024）</title><desc>1987–2024 年 NeurIPS 论文标题中各主题的占比（三年平均）：神经网络类从约 40% 一路下降，语言和大模型类在最近几年上升。</desc>
 <line class="grid" x1="30" x2="252" y1="188.0" y2="188.0"/><text class="tick" x="24" y="191.5" text-anchor="end">0%</text>
 <line class="grid" x1="30" x2="252" y1="144.0" y2="144.0"/><text class="tick" x="24" y="147.5" text-anchor="end">10%</text>
 <line class="grid" x1="30" x2="252" y1="100.0" y2="100.0"/><text class="tick" x="24" y="103.5" text-anchor="end">20%</text>
@@ -411,8 +411,8 @@
 <text class="end c-short bold" x="258.0" y="170.6">网络 / 循环</text>
 </svg>
         </figure>
-        <h3><a href="https://github.com/MXGao-A/The-hottest-Topic-in-Machine-Learning">NeurIPS 标题里的机器学习趋势</a></h3>
-        <p>对 1987–2024 年 24,779 篇 NeurIPS 论文标题做主题建模，并用 bootstrap 重拟合和人为植入趋势加以检验。2019–21 年以来，语言与大模型类标题增幅最大。</p>
+        <h3><a href="https://github.com/MXGao-A/The-hottest-Topic-in-Machine-Learning">从 NeurIPS 标题看机器学习热点</a></h3>
+        <p>对 1987–2024 年 24,779 篇 NeurIPS 论文标题做主题建模，再用 bootstrap 重拟合和人工植入趋势做稳健性检验。2019–21 年以来涨得最快的是语言和大模型。</p>
         <dl class="facts"><div><dt>标题数</dt><dd>24,779</dd></div><div><dt>最大增幅</dt><dd>+4.6 pct</dd></div><div><dt>方法</dt><dd>NMF</dd></div></dl>
         <ul class="chips"><li>scikit-learn</li><li>NLP</li></ul>
         <a class="link" href="https://github.com/MXGao-A/The-hottest-Topic-in-Machine-Learning">主题趋势 →</a>
@@ -431,19 +431,19 @@
             <p>金融工程硕士（M.S.）</p></li>
           <li><span class="mono when">2022.02 – 2026.02 · 悉尼</span>
             <h3>悉尼大学</h3>
-            <p>数据科学理学学士（一等荣誉，B.Sc.）；金融学商学学士（B.Com.）。GPA 87/100。</p>
-            <p>院长嘉许名单（Dean’s List）、学业优异奖（Academic Merit Prize）、校长全球交流奖学金（Vice-Chancellor’s Global Mobility Scholarship）。</p></li>
+            <p>数据科学理学学士（一等荣誉）、金融学商学学士；GPA 87/100。</p>
+            <p>院长荣誉榜、学术优秀奖、校长全球交流奖学金。</p></li>
         </ul>
       </div>
       <div>
         <div class="sec-head"><span class="mono">04</span><h2>竞赛</h2></div>
         <ul class="list">
           <li><span class="mono when">2025.04</span>
-            <h3>IMC Prosperity 3 — 12,620 支队伍中排名第 223</h3>
-            <p>前 1.8%。在模拟多资产交易所中实现做市、篮子相对价值与期权策略。</p></li>
+            <h3>IMC Prosperity 3 — 第 223 名（共 12,620 支队伍）</h3>
+            <p>前 1.8%。在模拟的多资产交易所里，写了做市、篮子相对价值和期权策略。</p></li>
           <li><span class="mono when">2023.09 – 2024.03</span>
             <h3>Optiver Trading at the Close — 铜牌</h3>
-            <p>Kaggle 前 6%。构建收盘集合竞价微观结构特征，用 LightGBM 预测 60 秒超额收益。</p></li>
+            <p>Kaggle 前 6%。用收盘集合竞价的微观结构特征训练 LightGBM，预测 60 秒超额收益。</p></li>
         </ul>
       </div>
     </div>
@@ -453,8 +453,8 @@
     <div class="sec-head"><span class="mono">05</span><h2>技能</h2></div>
     <dl>
       <dt class="mono">编程语言</dt><dd>Python, C/C++, R, SQL</dd>
-      <dt class="mono">常用库</dt><dd>PyTorch, NumPy, pandas, SciPy, scikit-learn, LightGBM, Optuna</dd>
-      <dt class="mono">工作之余</dt><dd>高海拔徒步、旅行摄影、中音萨克斯、长跑</dd>
+      <dt class="mono">工具库</dt><dd>PyTorch, NumPy, pandas, SciPy, scikit-learn, LightGBM, Optuna</dd>
+      <dt class="mono">爱好</dt><dd>高海拔徒步、旅行摄影、中音萨克斯、长跑</dd>
     </dl>
   </section>
   </main>
@@ -463,7 +463,7 @@
     <div class="contact">
       <div>
         <div class="mono">联系方式</div>
-        <h2><span class="nb">正在招聘 2027 年暑期量化研究实习生？</span><span class="nb">期待与您交流。</span></h2>
+        <h2><span class="nb">在找 2027 年暑期量化研究实习，</span><span class="nb">欢迎联系。</span></h2>
         <div class="links">
           <a href="mailto:mg5040@columbia.edu">mg5040@columbia.edu</a>
           <a href="https://www.linkedin.com/in/mingxian-gao">LinkedIn</a>
@@ -472,7 +472,7 @@
         </div>
       </div>
     </div>
-    <p class="colophon">© 2026 Mingxian Gao · 纽约。文中回测与模型数据均为研究结果，不代表实际投资业绩。</p>
+    <p class="colophon">© 2026 高铭贤 · 纽约。文中回测和模型结果仅为研究用途，不代表实盘业绩。</p>
   </footer>
 </div>
 <script>
