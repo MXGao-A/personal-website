@@ -119,6 +119,56 @@ footer{margin-top:72px;border-top:1px solid var(--ink);padding:40px 0 56px}
 .contact .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
 .colophon{color:var(--muted);font-size:13.5px;margin-top:36px}
 
+/* ---- project charts (inline SVG, theme-aware) */
+.chart-fig{background:var(--card);padding:18px 18px 10px}
+.chart{width:100%;height:auto;display:block}
+.chart .grid{stroke:var(--rule);stroke-width:1}
+.chart .zero,.chart .axisline{stroke:var(--muted);stroke-width:.8}
+.chart .tick{font:400 11px var(--mono);fill:var(--muted)}
+.chart .tick.head{font:500 12px var(--sans);fill:var(--ink)}
+.chart .lab{font:400 13px var(--sans);fill:var(--body)}
+.chart .lab.bold,.chart .end.bold{font-weight:500;fill:var(--ink)}
+.chart .val{font:400 12px var(--mono);fill:var(--ink)}
+.chart .end{font:400 11px var(--sans)}
+.chart .ln{fill:none;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+.chart .ln.bold{stroke-width:2.2}
+.chart .ln.thin{stroke-width:.9;opacity:.35}
+.chart .ln.faint{stroke-width:.8;opacity:.28}
+.chart .ln.dash{stroke-dasharray:4 3}
+.chart .err{stroke:var(--ink);stroke-width:1.2;opacity:.55}
+.chart .c-acc{stroke:var(--accent);fill:var(--accent)}
+.chart .c-long{stroke:var(--c-long);fill:var(--c-long)}
+.chart .c-short{stroke:var(--c-short);fill:var(--c-short)}
+.chart .c-muted{stroke:var(--muted);fill:var(--muted)}
+.chart .ln.c-acc,.chart .ln.c-long,.chart .ln.c-short,.chart .ln.c-muted{fill:none}
+.chart .bar{stroke:none}
+.chart .bar.c-muted{opacity:.55}
+.chart text.c-acc{fill:var(--accent);stroke:none}
+.chart text.c-long{fill:var(--c-long);stroke:none}
+.chart text.c-short{fill:var(--c-short);stroke:none}
+.chart text.c-muted{fill:var(--muted);stroke:none}
+
+/* ---- more projects: card grid */
+.more{border-top:1px solid var(--rule);margin-top:6px;padding-top:28px}
+.more-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+h3.sub{font:500 24px var(--serif);color:var(--ink);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--rule);padding:16px 18px 18px;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--muted);transform:translateY(-2px)}
+.card-fig{margin:0 0 12px;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.card h3{font-size:19px;margin:0 0 6px}
+.card h3 a{text-decoration:none}
+.card h3 a:hover{color:var(--accent)}
+.card p{font-size:15px;line-height:1.55;margin:0 0 12px;color:var(--body)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 0 4px;border-top:1px solid var(--rule)}
+.facts div{padding:8px 6px 0 0}
+.facts dt{font:400 10.5px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:0;padding:0}
+.facts dd{font:500 16px/1.3 var(--serif);color:var(--ink);margin:2px 0 0;border:0;padding:0}
+.card .chips{margin-top:12px}
+.card .link{margin-top:auto;padding-top:12px;align-self:flex-start;border-bottom:0;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:1000px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.cards{grid-template-columns:1fr}.chart-fig{padding:10px 8px 6px}}
+
 /* ---- responsive */
 @media (max-width:900px){
   .wrap{padding:0 22px}
