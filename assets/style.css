@@ -213,3 +213,5 @@ h3.sub{font:500 24px var(--serif);color:var(--ink);margin:0}
   .theme,nav ul a.lang{padding:5px 7px}
 }
 @media print{nav ul,.theme,.btns{display:none}body{background:#fff}}
+
+h1 .en-name{font-size:.5em;color:var(--muted);font-weight:400;letter-spacing:0;margin-left:.2em;white-space:nowrap}
