@@ -142,6 +142,7 @@ footer{margin-top:72px;border-top:1px solid var(--ink);padding:40px 0 56px}
 .chart .c-muted{stroke:var(--muted);fill:var(--muted)}
 .chart .ln.c-acc,.chart .ln.c-long,.chart .ln.c-short,.chart .ln.c-muted{fill:none}
 .chart .bar{stroke:none}
+.chart .band{fill:var(--accent);opacity:.09}
 .chart .bar.c-muted{opacity:.55}
 .chart text.c-acc{fill:var(--accent);stroke:none}
 .chart text.c-long{fill:var(--c-long);stroke:none}
