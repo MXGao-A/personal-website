@@ -198,11 +198,40 @@
       <div>
         <h3>US cross-sectional stock-selection signals</h3>
         <div class="role">Point-in-time data, pre-specified signals, cost-aware portfolio tests</div>
+        <figure class="project-fig chart-fig">
+<svg class="chart" viewBox="0 0 760 164" role="img" aria-label="Signal strength and net excess return by size universe"><title>Signal strength and net excess return by size universe</title><desc>Out-of-sample composite rank IC and annualised net excess return of a 100-stock long-only portfolio over its equal-weighted universe: Large caps: IC 0.028, +2.5% at 10 bp costs; Small caps: IC 0.067, +8.2% at 30–100 bp costs; Micro caps: IC 0.097, −6.0% at 300 bp costs</desc>
+<text class="tick head" x="150.0" y="24">Rank IC, out-of-sample</text>
+<text class="lab " x="138" y="56" text-anchor="end">Large caps</text>
+<rect class="bar c-muted" x="150.0" y="44" width="42.0" height="18" rx="1"/>
+<text class="val" x="200.0" y="57">0.028</text>
+<text class="lab bold" x="138" y="96" text-anchor="end">Small caps</text>
+<rect class="bar c-acc" x="150.0" y="84" width="100.5" height="18" rx="1"/>
+<text class="val" x="258.5" y="97">0.067</text>
+<text class="lab " x="138" y="136" text-anchor="end">Micro caps</text>
+<rect class="bar c-short" x="150.0" y="124" width="145.5" height="18" rx="1"/>
+<text class="val" x="303.5" y="137">0.097</text>
+<line class="axisline" x1="150.0" x2="150.0" y1="40" y2="160"/>
+<text class="tick head" x="420.0" y="24">Net excess return / yr over own universe</text>
+<rect class="bar c-muted" x="500.0" y="44" width="27.5" height="18" rx="1"/>
+<text class="val" x="535.5" y="57">+2.5%</text>
+<text class="tick" x="581.5" y="57">at 10 bp</text>
+<rect class="bar c-acc" x="500.0" y="84" width="90.2" height="18" rx="1"/>
+<text class="val" x="598.2" y="97">+8.2%</text>
+<text class="tick" x="644.2" y="97">at 30–100 bp</text>
+<rect class="bar c-short" x="434.0" y="124" width="66.0" height="18" rx="1"/>
+<text class="val" x="426.0" y="137" text-anchor="end">−6.0%</text>
+<text class="tick" x="508.0" y="137">at 300 bp</text>
+<line class="axisline" x1="500.0" x2="500.0" y1="40" y2="160"/>
+</svg>
+        <figcaption>Rank IC: composite of 18 signals, 2000–2021. Returns: 100-stock long-only portfolio against its equal-weighted universe, 1990–2025, net of one-way costs.</figcaption>
+        </figure>
         <ul>
           <li>Built a point-in-time US equity database on CRSP, Compustat and I/B/E/S (<b>2.5M stock-months</b>, 1985–2025), aligning fundamentals to announcement dates and correcting split, fiscal-year and delisting-return errors. Replicated published market, size, value and momentum factors at 0.98–1.00 correlation.</li>
           <li>Tested 18 pre-specified signals in four size universes. The composite rank IC rises from 0.03 in the largest 1,000 stocks to 0.07 in ranks 2,001–3,000, and holds in a locked 2022–2025 sample.</li>
-          <li>A liquidity-screened small-cap long-only portfolio beats its universe by <b>8.3% a year net of costs</b> (information ratio 1.1), against 2.5% in large caps. The micro-cap edge turns negative at realistic costs, which separates tradable alpha from statistical alpha.</li>
+          <li>A liquidity-screened small-cap long-only portfolio beats its universe by <b>8.2% a year net of costs</b> (information ratio 1.1), against 2.5% in large caps. The micro-cap edge turns negative at realistic costs, which separates tradable alpha from statistical alpha.</li>
         </ul>
+        <ul class="chips"><li>pandas</li><li>NumPy</li><li>SciPy</li><li>WRDS</li></ul>
+        <a class="link" href="https://github.com/MXGao-A/us-equity-signal-research">Code, results and full write-up on GitHub →</a>
       </div>
     </div>
 
