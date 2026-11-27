@@ -44,6 +44,27 @@ nav ul a{color:var(--ink);text-decoration:none;font-size:15px}
 nav ul a:hover{color:var(--accent)}
 .theme{font:400 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:none;border:1px solid var(--rule);border-radius:2px;padding:6px 10px;cursor:pointer}
 .theme:hover{color:var(--ink);border-color:var(--ink)}
+nav ul a.lang{font:400 12px var(--sans);letter-spacing:.04em;color:var(--muted);border:1px solid var(--rule);border-radius:2px;padding:5px 9px;line-height:1.2;display:inline-block;white-space:nowrap}
+nav ul a.lang:hover{color:var(--ink);border-color:var(--ink)}
+
+/* ---- Chinese page: system CJK fonts after the Latin webfonts, looser leading */
+html[lang="zh-CN"]{
+  --serif:"Newsreader","Songti SC","Noto Serif SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
+  --sans:"Plex Sans","PingFang SC","Hiragino Sans GB","Noto Sans SC","Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Plex Mono",ui-monospace,SFMono-Regular,Menlo,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Microsoft YaHei",monospace;
+}
+html[lang="zh-CN"] body{line-height:1.75;letter-spacing:.01em}
+html[lang="zh-CN"] .lede{line-height:1.7}
+html[lang="zh-CN"] .lede em{font-style:normal}
+html[lang="zh-CN"] h2,html[lang="zh-CN"] h3{letter-spacing:.02em}
+html[lang="zh-CN"] h2,html[lang="zh-CN"] h3{text-wrap:balance}
+html[lang="zh-CN"] .contact h2{line-height:1.35;max-width:none}
+html[lang="zh-CN"] .contact h2 .nb{display:inline-block}
+html[lang="zh-CN"] .entry li,html[lang="zh-CN"] .entry p{line-height:1.8}
+html[lang="zh-CN"] .card p{line-height:1.7}
+html[lang="zh-CN"] .stat .l,html[lang="zh-CN"] figcaption{line-height:1.6}
+html[lang="zh-CN"] .mono{letter-spacing:.06em}
+html[lang="zh-CN"] .facts dt{letter-spacing:.02em}
 
 /* ---- hero */
 .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:64px 0 52px}
@@ -185,5 +206,10 @@ h3.sub{font:500 24px var(--serif);color:var(--ink);margin:0}
   nav ul{gap:16px}
   nav ul .hide-s{display:none}
   dl{grid-template-columns:110px 1fr}
+}
+@media (max-width:440px){
+  nav .name{gap:8px;font-size:17px;white-space:nowrap}
+  nav ul{gap:12px}
+  .theme,nav ul a.lang{padding:5px 7px}
 }
 @media print{nav ul,.theme,.btns{display:none}body{background:#fff}}
